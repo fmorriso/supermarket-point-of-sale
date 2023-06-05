@@ -13,4 +13,15 @@ public class Item
     }
 
     private Item() {/* prevent uninitialized instances */}
+
+    @Override
+    public String toString()
+    {
+        return "Item{" +
+                "SKU='" + SKU + '\'' +
+                ", name='" + name + '\'' +
+                ", pricingMethod=" + pricingMethod +
+                ", unitPrice=" + unitPrice +
+                '}';
+    }
 }
